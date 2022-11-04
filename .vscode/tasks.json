@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe compilar archivo activo",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "${file}",
+                "-o",
+                "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+                "-I\"${workspaceFolder}\\include\"",
+                "-L\"${workspaceFolder}\\lib\"",
+                "-lfreeglut",
+                "-lopengl32",
+                "-lglu32"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarea generada por el depurador."
+        }
+    ],
+    "version": "2.0.0"
+}
